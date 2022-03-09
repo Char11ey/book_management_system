@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function username() {
+            const UNObj = document.getElementById("username");
+            const tempName = UNObj.value;
+            const testName = /^\w{5,12}$/;
+            let spanObj = document.getElementById("usernameSpan");
+            if(testName.test(tempName)){
+                spanObj.innerHTML = "Username is legal";
+            }
+            else
+                spanObj.innerHTML = "Username is illegal";
+        }
+    </script>
+</head>
+<body>
+    Username:
+    <label for="username"></label>
+    <input type="text" id="username" value="none">
+    <span id="usernameSpan" style="color: red"></span>
+    <button onclick="username()">Test</button>
+</body>
+</html>

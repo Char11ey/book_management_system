@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="http://localhost:8080" method="post">
+        <h2 align="center">调查表单</h2>
+        <table align="center">
+            <tr>
+                <td>用户名称：</td>
+                <td>
+                    <label>
+                        <input type="text">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td>
+                    <label>
+                        <input type="password">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <label>
+                        <input type="radio" name="sex"/>
+                    </label>男
+                    <label>
+                    <input type="radio" name="sex"/>
+                    </label>女
+                </td>
+            </tr>
+            <tr>
+                <td>国籍：</td>
+                <td>
+                    <label>
+                        <select>
+                            <option>--请输入国籍--</option>
+                            <option>中国</option>
+                            <option>美国</option>
+                            <option>日本</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
